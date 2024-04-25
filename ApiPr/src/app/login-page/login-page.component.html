@@ -1,0 +1,9 @@
+
+<form (ngSubmit)="onLoin()" #f="ngForm">
+    <label for="email">Email :</label>
+    <input type="email" name="email" id="email" [(ngModel)]="formLogin.email" required/>
+    <label for="password">Password :</label>
+    <input type="password" name="password" id="password"  [(ngModel)]="formLogin.password" required/>
+    <input type="submit" value="Login">
+</form>
+<p (click)="navigateSignup()">SignUp</p>
