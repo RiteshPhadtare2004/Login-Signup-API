@@ -1,15 +1,75 @@
-<form (ngSubmit)="signUp()" #f="ngForm">
-    <label for="name">Name :</label>
-    <input type="text" id="name" name="name" required [(ngModel)]="formSignup.name">
-    <label for="rollNo">Roll No. :</label>
-    <input type="text" id="rollNo" name="rollNo" required [(ngModel)]="formSignup.rollNo">
-    <label for="year">Year :</label>
-    <input type="text" id="year" name="year" required [(ngModel)]="formSignup.year">
-    <label for="email">Email :</label>
-    <input type="email" id="email" name="email" required [(ngModel)]="formSignup.email">
-    <label for="password">Password :</label>
-    <input type="password" id="password" name="password" required [(ngModel)]="formSignup.password">
-    <label for="confirmPassword">Confirm Password :</label>
-    <input type="password" id="confirmPassword" name="confirmPassword" required [(ngModel)]="formSignup.confirmPassword">
-    <input type="submit" value="SignUp">
-</form>
+<div style="margin: 50px">
+  <form (ngSubmit)="signUp()" #f="ngForm" class="mt-3">
+    <div class="form-group">
+      <label for="name">Name :</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        [(ngModel)]="formSignup.name"
+      />
+    </div>
+    <div class="form-group">
+      <label for="rollNo">Roll No. :</label>
+      <input
+        type="text"
+        id="rollNo"
+        name="rollNo"
+        required
+        [(ngModel)]="formSignup.rollNo"
+      />
+    </div>
+    <div class="form-group">
+      <label for="year">Year :</label>
+      <input
+        type="text"
+        id="year"
+        name="year"
+        required
+        [(ngModel)]="formSignup.year"
+      />
+    </div>
+    <div class="form-group">
+      <label for="email">Email :</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        [(ngModel)]="formSignup.email"
+      />
+    </div>
+    <div class="form-group">
+      <label for="email">Email :</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        [(ngModel)]="formSignup.email"
+      />
+    </div>
+    <div class="form-group">
+      <label for="password">Password :</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+        [(ngModel)]="formSignup.password"
+      />
+    </div>
+    <div class="form-group">
+      <label for="confirmPassword">Confirm Password :</label>
+      <input
+        type="password"
+        id="confirmPassword"
+        name="confirmPassword"
+        required
+        [(ngModel)]="formSignup.confirmPassword"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary" >SignUp</button>
+  </form>
+</div>
