@@ -11,7 +11,11 @@ After that open MongoDB Compass and insert this URL in mongodb compass "mongodb:
 Open PostMan and test all API's
 
 http://localhost:5000/api/auth/signup
+
 http://localhost:5000/api/auth/login
+
 http://localhost:5000/api/auth/profile/:id
+
 http://localhost:5000/api/auth/profile/update/:id
+
 http://localhost:5000/api/auth/delete/:id
