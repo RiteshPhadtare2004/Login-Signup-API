@@ -1,20 +1,17 @@
-mkdir nodejs-express-mongodb-auth
+This Project contains CRUD Operations Using  Node, Express and MongoDB
 
-cd nodejs-express-mongodb-auth
+Open Terminal in server folder and run following command
 
-npm init -y
+>npm install
 
-npm install express mongoose body-parser bcryptjs jsonwebtoken cors
+>npm start
 
-Create Project Structure:
-  nodejs-express-mongodb-auth/
-  ├── models/
-  │   ├── User.js
-  ├── routes/
-  │   ├── auth.js
-  ├── config/
-  │   ├── config.js
-  ├── index.js
+After that open MongoDB Compass and insert this URL in mongodb compass "mongodb://localhost:27017/APIPr"
 
-node index.js
+Open PostMan and test all API's
 
+http://localhost:5000/api/auth/signup
+http://localhost:5000/api/auth/login
+http://localhost:5000/api/auth/profile/:id
+http://localhost:5000/api/auth/profile/update/:id
+http://localhost:5000/api/auth/delete/:id
