@@ -1,1 +1,15 @@
-<p>home-page works!</p>
+<ul>
+    <li *ngFor="let user of users">
+      <div *ngIf="!user.editing">
+        {{ user.name }} - {{ user.email }}
+        <button (click)="editUser(user)">Edit</button>
+      </div>
+      <div *ngIf="user.editing">
+        <input type="text" [(ngModel)]="user.name" name="name">
+        <input type="email" [(ngModel)]="user.email" name="email">
+        <button (click)="saveUser(user)">Save</button>
+        <button (click)="cancelEdit(user)">Cancel</button>
+      </div>
+    </li>
+  </ul>
+  
